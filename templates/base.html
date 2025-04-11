@@ -101,6 +101,7 @@
 <body class="{% block bodyclass %}{% endblock %}" >
 
 <script>
+         window.SWETRIX_PROJECT_ID = "{{ SWETRIX_PROJECT_ID }}";
    document.addEventListener('DOMContentLoaded', function() {
        swetrix.init(window.SWETRIX_PROJECT_ID);
        swetrix.trackViews({
