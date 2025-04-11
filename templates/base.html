@@ -102,7 +102,7 @@
 
 <script>
    document.addEventListener('DOMContentLoaded', function() {
-       swetrix.init(window.PROJECT_ID);
+       swetrix.init(window.SWETRIX_PROJECT_ID);
        swetrix.trackViews({
            unique: true,
        });
@@ -116,7 +116,7 @@
 
 <noscript>
    <img
-           src="https://api.swetrix.com/log/noscript?pid="+window.PROJECT_ID;
+           src="https://api.swetrix.com/log/noscript?pid="+window.SWETRIX_PROJECT_ID;
            alt=""
            referrerpolicy="no-referrer-when-downgrade"
    />
