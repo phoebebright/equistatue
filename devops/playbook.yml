@@ -21,7 +21,7 @@
         project_media_url: /media
         project:
           name: equistatue
-          domain: statues.whinn.ie
+          domain: equistatue.com
           #static_url: /static
           touch_logs: 
             - django.log

@@ -71,6 +71,7 @@
 
     <title>{% block title %}{{ SITE_NAME }}{% endblock %}</title>
 
+  <script src="https://swetrix.org/swetrix.js" defer></script>
 
     <!-- Compiled and minified CSS -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Titillium+Web|Material+Icons" rel="stylesheet">
@@ -108,7 +109,27 @@
 </head>
 <body class="{% block bodyclass %}{% endblock %}" >
 
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+       swetrix.init(window.PROJECT_ID);
+       swetrix.trackViews({
+           unique: true,
+       });
+       swetrix.trackErrors({
+           sampleRate: 1,
+           callback: undefined,
+       });
+   });
+</script>
 
+
+<noscript>
+   <img
+           src="https://api.swetrix.com/log/noscript?pid="+window.PROJECT_ID;
+           alt=""
+           referrerpolicy="no-referrer-when-downgrade"
+   />
+</noscript>
 
 {% block modals %}
 

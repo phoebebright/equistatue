@@ -27,6 +27,7 @@ def include_settings(request=None):
                'LOGIN_URL' : settings.LOGIN_URL,
 
                'cookielaw_accepted': request.COOKIES.get('cookielaw_accepted', False),
+               'SWETRIX_PROJECT_ID': settings.SWETRIX_PROJECT_ID,
 
                }
 
