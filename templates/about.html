@@ -14,10 +14,17 @@
 
   <div class="px-4 py-2 my-2 text-center">
     <img class="d-block mx-auto mb-4" src="{% static "images/statue1.jpg" %}" alt="" width="300" >
-    <h1 class="display-5 fw-bold">What's it all about?</h1>
-    <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">I got curious about statues of horses when looking at stereotypes of dressage horses using DALL-E and StableDiffusion (<a href="https://medium.com/@thehorsetechie/what-can-dall-e-stable-diffusion-and-chatgpt-tell-us-about-dressage-horse-stereotypes-2ebf7b05c230" target="_blank">another story!</a>).  We seem to like horses with highly arched necks and I wondered if this was a recent preference or historical?  Then I found Kees Van Tilburg's website with photographs and descriptions of most of the known equestrian statues of the world and so I've gone geek and I'm doing some research.  Can you help?</p>
-        <p class="lead mb-4">I want to first see if people have a gut preference for the different ways horses are represented in statues. If you can spare a minute, click the Survey 1 button below and you will be shown 10 images of statues with a question about whether you like this respresentation of the horse or not. </p>
+    <h1 class="display-5 fw-bold">What do you like?</h1>
+      <h3>Are we love dramatic horse poses?</h3>
+
+      <p>It all started when I was playing with AI art tools like DALL-E and StableDiffusion , exploring stereotypes of dressage horses ((<a href="https://medium.com/@thehorsetechie/what-can-dall-e-stable-diffusion-and-chatgpt-tell-us-about-dressage-horse-stereotypes-2ebf7b05c230" target="_blank">another story!</a>)). I noticed how often we’re drawn to horses with dramatically arched necks—but is this a modern preference, or something deeper?</p>
+
+      <p>That’s when I stumbled upon Kees Van Tilburg’s incredible archive of equestrian statues from around the world. Naturally, I fell down the research rabbit hole. Now I’m curious: do people have an instinctive preference for certain horse poses in art?</p>
+
+      <p>If you’ve got a minute, click the Survey 1 button below—you’ll see 10 statue images, and all you have to do is tell me whether you like the way the horse is portrayed. Want to help solve this little mystery? Let’s find out!</p>
+
+
+
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
         <a href="/like_dislike/" class="btn btn-primary btn-lg px-4 gap-3">Survey 1</a>
       </div>
@@ -73,10 +80,10 @@
 
   <div class="container col-xl-10 col-xxl-8 px-4 py-5">
     <div class="row align-items-center g-lg-5 py-5">
-      <div class="col-lg-7 text-center text-lg-start">
-        <h1 class="display-4 fw-bold lh-1 mb-3">Get a Daily Statue</h1>
-        <p class="col-lg-10 fs-4">I'm going to post statues on BlueSky - <a href="https://bsky.app/profile/equistatue.bsky.social">https://bsky.app/profile/equistatue.bsky.social</a></p>
-      </div>
+{#      <div class="col-lg-7 text-center text-lg-start">#}
+{#        <h1 class="display-4 fw-bold lh-1 mb-3">Get a Daily Statue</h1>#}
+{#        <p class="col-lg-10 fs-4">I'm going to post statues on BlueSky - <a href="https://bsky.app/profile/equistatue.bsky.social">https://bsky.app/profile/equistatue.bsky.social</a></p>#}
+{#      </div>#}
       <div class="col-md-10 mx-auto col-lg-5">
         <form class="p-4 p-md-5 border rounded-3 bg-light" method="post" >
             {% csrf_token %}
@@ -85,7 +92,7 @@
             <label for="floatingInput">Email address</label>
           </div>
 <p>
-           <button class="btn btn-success border-rad" type="submit" >Subscribe</button>
+           <button class="btn btn-success border-rad" type="submit" >Subscribe to get occassional updates on the results.</button>
 </p>
 
 <div class="fb-share-button" data-href="https://statues.whinn.ie" data-layout="" data-size=""><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstatues.whinn.ie%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share on Facebook</a></div>
